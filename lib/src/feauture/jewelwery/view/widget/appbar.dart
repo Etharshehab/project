@@ -9,8 +9,12 @@ class Appbar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: 40.0, left: 10),
       child: Row(children: [
+        IconButton(
+            onPressed: () {
+              Navigator.pop(context); // Navigate back
+            },
+            icon: Icon(Icons.arrow_back)),
         Text('jewelwery', style: titleStyle),
-        IconButton(onPressed: () {}, icon: Icon(Icons.arrow_back))
       ]),
     );
   }

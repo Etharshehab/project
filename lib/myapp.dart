@@ -1,4 +1,4 @@
-import 'package:dapp/src/feauture/splashscreen/view/screens/splash.dart';
+import 'package:dapp/src/feauture/auth/view/screens/signup.dart';
 import 'package:flutter/material.dart';
 
 class MainApp extends StatelessWidget {
@@ -8,7 +8,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(body: Splash()),
+      home: Scaffold(body: SignUp()),
     );
   }
 }

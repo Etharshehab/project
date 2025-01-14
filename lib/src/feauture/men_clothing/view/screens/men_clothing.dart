@@ -24,7 +24,16 @@ class MenClothing extends StatelessWidget {
             // Title Section
             Padding(
               padding: const EdgeInsets.only(top: 40.0, left: 10),
-              child: Text('MenClothing', style: titleStyle),
+              child: Row(
+                children: [
+                  IconButton(
+                      onPressed: () {
+                        Navigator.pop(context); // Navigate back
+                      },
+                      icon: Icon(Icons.arrow_back)),
+                  Text('MenClothing', style: titleStyle),
+                ],
+              ),
             ),
             Expanded(
               child: CustomGridView(),
