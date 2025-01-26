@@ -1,4 +1,4 @@
-import 'package:dapp/src/feauture/home/view/screens/home.dart';
+import 'package:dapp/src/feauture/auth/view/screens/register_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
@@ -10,7 +10,7 @@ class Splash extends StatelessWidget {
     Future.delayed(const Duration(seconds: 5), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const Home()),
+        MaterialPageRoute(builder: (context) => const RegisterScreen()),
       );
     });
 
